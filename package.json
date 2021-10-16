@@ -16,5 +16,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.13"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ciel1094/Project_TG_2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ciel1094/Project_TG_2/issues"
+  },
+  "homepage": "https://github.com/ciel1094/Project_TG_2#readme"
 }
