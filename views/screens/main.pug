@@ -1,5 +1,16 @@
 extends ../layout/base.pug
 
 block content
-    section.main    
-        h1 hello world
+
+    div.word-display Hello player
+
+    div.word-input-box
+        input(type="text", class="word-input")
+
+    div.game-info
+        div 남은시간:
+            span(class="time") 0
+
+            
+        
+        
