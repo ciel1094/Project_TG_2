@@ -4,9 +4,9 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
+        title Login
     body 
-        form(action="/api/user/register" method="POST")
+        form(action="/login" method="POST")
             div
                 label(htmlFor="id") ID 
                 input(type="id" name="id" id="id" required)
@@ -16,5 +16,5 @@ html(lang="en")
             div 
                 label(htmlFor="nickname") NICKNAME 
                 input(type="text" name="nickname" id="nickname" required)
-                
+
             input(type="submit" value="SIGN UP")
