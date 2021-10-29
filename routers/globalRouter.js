@@ -14,8 +14,16 @@ router.get("/review", async (req, res, next) => {
 
     //데이터가오기
     const query1 = `
+    SELECT	COUNT(id)	AS count,
+            AVG(score)	AS avg
+      FROM	reviews
     `;
     const query2 = `
+    SELECT	id,
+            score,
+            content
+      FROM	reviews
+     ORDER	BY	id	DESC
     `;
 
     try {
