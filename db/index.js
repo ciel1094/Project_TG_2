@@ -5,7 +5,7 @@ const db = mysql2.createPool({
     port: "3306",
     database: "TG_db",
     user: "root",
-    password: "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"
+    password: "fourleaf0309"
 });
 
 module.exports = db;

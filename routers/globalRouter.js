@@ -7,7 +7,7 @@ router.get("/", (req, res, next) => {
     res.render("screens/main")
 });
 
-router.get("/review", async (req, res, next) => {
+router.get("/reviewCreate", async (req, res, next) => {
 
     let result1 = null;
     let result2 = null;
