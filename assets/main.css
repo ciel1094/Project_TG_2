@@ -11,10 +11,22 @@ body {
   background-color: khaki;
 }
 
+.header {
+  width: 100%;
+  background: steelblue;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
 .word-display {
   margin-top: 3rem;
   font-size: 80px;
   color: steelblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .word-input-box {
@@ -28,6 +40,10 @@ body {
 .word-input {
   padding: 0.5rem;
   width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .game-info {
@@ -35,7 +51,9 @@ body {
   margin-top: 2rem;
   font-size: 0.8rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   color: steelblue;
 }
 
@@ -53,6 +71,13 @@ body {
   border: none;
   margin-top: 3rem;
   cursor: pointer;
+}
+
+button .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .loading {
