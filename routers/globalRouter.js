@@ -7,6 +7,10 @@ router.get("/", (req, res, next) => {
     res.render("screens/main")
 });
 
+router.get("/sign_up", (req, res, next) => {
+    res.render("screens/signUp")
+});
+
 router.get("/reviewCreate", async (req, res, next) => {
 
     let result1 = null;

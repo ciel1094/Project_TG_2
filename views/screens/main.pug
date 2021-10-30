@@ -1,16 +1,17 @@
 extends ../layout/base.pug
 
 block content
+    .main
+        div.word-display
+            h1 HELLO PLAYER 
 
-    div.word-display
+        div.word-input-box
+            input(type="text", class="word-input")
 
-    div.word-input-box
-        input(type="text", class="word-input")
-
-    div.game-info
-        div 남은시간:
-            span(class="time") 0
-        div 흭득점수:
-            span(class="score") 0
-    button(class="button loading" onclick="run()") 게임을 불러오는 중...
+        div.game-info
+            div 남은시간:
+                span(class="time") 0
+            div 흭득점수:
+                span(class="score") 0
+        button(class="button loading" onclick="run()") 게임을 불러오는 중...
     
