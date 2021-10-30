@@ -7,20 +7,20 @@ router.get("/", (req, res, next) => {
     res.render("screens/main")
 });
 
-router.get("/reviewCreate", (req, res, next) => {
+router.get("/review", (req, res, next) => {
     res.render("screens/review")
-});
+})
 
 router.get("/sign_up", (req, res, next) => {
     res.render("screens/signUp")
 });
 
-router.post("/reviewCreate", async (req, res, next) => {
+router.post("/review", async (req, res, next) => {
 
     let result1 = null;
     let result2 = null;
 
-    //데이터가오기
+    //데이터가져오기
     const query1 = `
     SELECT	COUNT(id)	AS count,
             AVG(score)	AS avg
@@ -50,17 +50,17 @@ router.post("/reviewCreate", async (req, res, next) => {
                 console.log(result1[0]);
                 console.log(result2);
 
-                res.render("screens/reviewCreate", {
+                res.render("screens/review", {
                     result1:result1[0],
                     result2:result2,
                 });
             });
         });
-
     } catch (error) {
         console.log(error);
     }
 
 });
+
 
 module.exports = router;
