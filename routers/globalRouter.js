@@ -50,7 +50,7 @@ router.post("/reviewCreate", async (req, res, next) => {
                 console.log(result1[0]);
                 console.log(result2);
 
-                res.render("screens/review", {
+                res.render("screens/reviewCreate", {
                     result1:result1[0],
                     result2:result2,
                 });
