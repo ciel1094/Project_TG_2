@@ -7,11 +7,15 @@ router.get("/", (req, res, next) => {
     res.render("screens/main")
 });
 
+router.get("/reviewCreate", (req, res, next) => {
+    res.render("screens/review")
+});
+
 router.get("/sign_up", (req, res, next) => {
     res.render("screens/signUp")
 });
 
-router.get("/reviewCreate", async (req, res, next) => {
+router.post("/reviewCreate", async (req, res, next) => {
 
     let result1 = null;
     let result2 = null;
@@ -26,8 +30,8 @@ router.get("/reviewCreate", async (req, res, next) => {
     SELECT	id,
             score,
             content
-      FROM	reviews
-     ORDER	BY	id	DESC
+    FROM	reviews
+    ORDER	BY	id	DESC
     `;
 
     try {
