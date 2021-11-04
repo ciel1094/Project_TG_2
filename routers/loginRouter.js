@@ -1,38 +1,34 @@
 const express = require("express");
-const login = require("../middlewares/login");
+const checkLogin = require("../middlewares/checkLogin");
 const db = require("../db");
 
 const router = express.Router();
 
-router.post("/LoginCreate", (req, res) => {
-    const loginInsertQuery = `
-        INSERT INTO login (
+router.post("/userCreate", (req, res) => {
+    const userinsertQuery = `
+        INSERT INTO login_TG3 (
             id,
             password,
-            nickname
+            nickanme
         ) VALUES (
-            "",
-            "",
-            ""
-)
+            "${req.body.id}",
+            "${req.body.password}",
+            "${req.body.nickanme}"
+        )
         `;
   
     try {
-      db.query(loginInsertQuery, (error, login) => {
+      db.query(userinsertQuery, (error, checkLogin) => {
         if (error) {
           console.error(error);
         }
-        res.redirect("/sign_up");
+        res.redirect("/signup");
       });
     } catch (error) {
       console.error(error);
       res.redirect("/");
     }
   });
-
-
-
-
 
 
 module.exports = router;

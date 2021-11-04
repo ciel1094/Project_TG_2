@@ -25,7 +25,7 @@ app.use("/assets", express.static(path.join(__dirname, "/assets")));
 
 app.use("/", globalRouter);
 // app.use("/review", reviewRouter);
-app.use("/sign_up", loginRouter);
+app.use("/signup", loginRouter);
 
 app.listen(PORT, () => {
     console.log(`Express ${PORT} PORT Server Start!`);

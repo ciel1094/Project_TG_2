@@ -12,7 +12,7 @@ router.get("/review", (req, res, next) => {
     res.render("screens/review")
 })
 
-router.get("/sign_up", (req, res, next) => {
+router.get("/signup", (req, res, next) => {
     res.render("screens/signUp")
 });
 
