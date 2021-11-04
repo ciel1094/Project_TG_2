@@ -9,13 +9,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background: linear-gradient(to right, #1a2980, #26d0ce);
 }
 
 .header {
   width: 100%;
-  background: lime;
-  color: black;
+  background: linear-gradient(to right, #e55d87, #5fc3e4);
+  color: white;
   text-align: center;
   padding: 1rem;
 }
@@ -23,7 +23,7 @@ body {
 .main {
   width: 100%;
   height: 450px;
-
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +33,7 @@ body {
 .word-display {
   margin-top: 3rem;
   font-size: 50px;
-  color: lime;
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -55,8 +55,8 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: red;
-  background-color: black;
+  color: white;
+  background: linear-gradient(to right, #e55d87, #5fc3e4);
 }
 
 .game-info {
@@ -67,7 +67,7 @@ body {
   flex-direction: row;
   margin: 50px 400px;
   justify-content: space-between;
-  color: lime;
+  color: white;
 }
 
 .game-info div {
@@ -80,13 +80,13 @@ body {
 .time,
 .score {
   font-size: 30px;
-  color: lime;
+  color: linear-gradient(to right, #e55d87, #5fc3e4);
 }
 
 .button {
   width: 200px;
   height: 35px;
-  background: lime;
+  background: linear-gradient(to right, #e55d87, #5fc3e4);
   color: white;
   border: none;
   margin-top: 3rem;

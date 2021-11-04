@@ -3,18 +3,10 @@ extends ../layout/base.pug
 block content       
     block content
         form(action="/signup/userCreate" method="post")
-            input(type="text" name="userId"  placeholder="아이디" required) 
+            input.text(type="text" name="id"  placeholder="ID" required) 
 
-            input(type="password" name="userPassword"  placeholder="비밀번호" required) 
+            input.text(type="password" name="password"  placeholder="PASSWORD" required) 
             
-            input(type="text" name="nickname"  placeholder="닉네임" required) 
-            
-            SELECT.selectbox(name="gender")
-                option(value="남성") 남성
-                option(value="여성") 여성
-                option(value="설정안함" sleectd) 설정안함     
-            input(type="submit" value="회원가입")
-
-            br
-            hr
-            br
+            input.text(type="text" name="nickname"  placeholder="NICKNAME" required) 
+              
+            input.text(type="submit" value="SIGN_UP")

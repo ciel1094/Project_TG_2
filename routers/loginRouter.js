@@ -6,14 +6,14 @@ const router = express.Router();
 
 router.post("/userCreate", (req, res) => {
     const userinsertQuery = `
-        INSERT INTO login_TG3 (
+        INSERT INTO login (
             id,
             password,
-            nickanme
+            nickname
         ) VALUES (
             "${req.body.id}",
             "${req.body.password}",
-            "${req.body.nickanme}"
+            "${req.body.nickname}"
         )
         `;
   
@@ -29,6 +29,6 @@ router.post("/userCreate", (req, res) => {
       res.redirect("/");
     }
   });
-
+console.log()
 
 module.exports = router;
