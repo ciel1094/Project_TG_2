@@ -12,7 +12,6 @@ router.get("/review", async (req, res, next) => {
     let result1 = null;
     let result2 = null;
 
-    //데이터가져오기
     const query1 = `
     SELECT	COUNT(id)	AS count,
             AVG(score)	AS avg
@@ -49,12 +48,6 @@ router.get("/review", async (req, res, next) => {
             });
         });
 
-        //db.query(query2, (error, result) => {
-            //if(error) {
-                //return console.error(error);
-            //}
-            //result2 = result;
-        //});
 
 
     } catch (error) {

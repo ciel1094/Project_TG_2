@@ -2,10 +2,9 @@ extends ../layout/base.pug
 
 block content
     section.reviewWrapper 
-        div.infoBox
-            div #{result1.count}개
-        div.infoBox
-            div #{result1.avg}점
+        each res1 in result1
+            div #{res1.count}개
+            div #{res1.avg}점
 
         form.createFrom(action="/review", method="post")
             select(name="score")
